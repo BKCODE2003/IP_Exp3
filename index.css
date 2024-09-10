@@ -1,15 +1,50 @@
 .logo{
     color: white;
 }
+.logo2{
+    color: rgb(16, 28, 101);
+}
 .landing{
     width: 100vw;
-    width: 100%;
+    height: 50vh;
     overflow: hidden;
     display: block;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
    
 }
-.video_dim{
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.video_dim {
     object-fit: cover !important;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.video-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.video-text h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.video-text p {
+    font-size: 2em;
+    margin: 0;
 }
