@@ -1,10 +1,14 @@
-.logo{
-    color: white;
+/* Logo colors */
+.logo {
+    color: rgb(255, 255, 255);
 }
-.logo2{
+
+.logo2 {
     color: rgb(16, 28, 101);
 }
-.landing{
+
+/* Landing section */
+.landing {
     width: 100vw;
     height: 50vh;
     overflow: hidden;
@@ -12,12 +16,52 @@
     position: fixed;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+    color: #ffffff;
     width: 100%;
     padding: 20px;
-   
 }
 
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    margin: 20px auto; /* Center cards horizontally with margin */
+    /* width: 300px; Fixed width for cards */
+    padding: 20px; /* Padding inside cards */
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Card heading */
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Media elements inside cards */
+.card video, 
+.card audio {
+    width: 100%;
+    display: block;
+    border-top: 1px solid #ddd;
+}
+
+/* Ensure focus styling for accessibility */
+.card video:focus, 
+.card audio:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+
+/* Video container styles */
 .video-container {
     position: relative;
     width: 100%;
@@ -37,6 +81,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: #f1f1f1;
+    transition: color 0.3s ease;
 }
 
 .video-text h1 {
@@ -47,4 +92,49 @@
 .video-text p {
     font-size: 2em;
     margin: 0;
+}
+
+/* Hover effect for video text */
+.video-text:hover h1 {
+    color: #000000; /* Changes heading color on hover */
+}
+
+.video-text:hover p {
+    color: #000000; /* Changes paragraph color on hover */
+}
+
+/* Navigation links */
+.nav-link {
+    transition: color 0.3s ease;
+    color: #000000 !important; /* Default color */
+}
+
+.nav-link:hover {
+    color: #d49361 !important; /* Highlighted color on hover */
+}
+
+/* Button styles with hover effect */
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* For better feedback, color change */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer social media icons */
+.footer .nav a {
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: #000000; /* Default color */
+}
+
+.footer .nav a:hover {
+    color: #001aff; /* Highlighted color on hover */
+    transform: scale(1.2); /* Icons grow slightly on hover */
+}
+
+/* Glow effect for video container on hover */
+.video-container:hover {
+    box-shadow: 0 0 15px rgba(255, 234, 0, 0.6); /* Soft glowing effect */
 }
